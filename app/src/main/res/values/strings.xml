@@ -1,0 +1,81 @@
+<resources>
+    <string name="intro">Your Journey Starts Here:</string>
+    <string name="app_namee">Get Reminded About Important Events</string>
+    <string name="app_nameee">Manage Your Health</string>
+    <string name="app_nameeee">Let\'s Get Started</string>
+
+    <string name="intro_s">Discover the opportunities we have to provide</string>
+    <string name="pp_name">Modify your personal calendar by adding events and set reminders for important tasks</string>
+    <string name="appp_name">Set up your desired workout routine and count your steps throughout the day</string>
+    <string name="apppp_name"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="record">Record</string>
+    <string name="more">more</string>
+
+    <string name="quote1">Stay Hungry. Stay Foolish \n -Steve Jobs</string>
+    <string name="quote2">The purpose of our lives is to be happy \n -Dalai Lama</string>
+    <string name="quote3">Life is what happens when you’re busy making other plans \n -John Lennon</string>
+    <string name="quote4">Get busy living or get busy dying \n -Stephen King</string>
+    <string name="quote5">You only live once, but if you do it right, once is enough \n -Mae West</string>
+    <string name="quote6">Many of life’s failures are people who did not realize how close they were to success when they gave up \n -Thomas A. Edison</string>
+    <string name="quote7">If you want to live a happy life, tie it to a goal, not to people or things \n -Albert Einstein</string>
+    <string name="quote8">Never let the fear of striking out keep you from playing the game \n -Babe Ruth</string>
+    <string name="quote9">Money and success don’t change people; they merely amplify what is already there \n -Will Smith</string>
+    <string name="quote10">Not how long, but how well you have lived is the main thing \n -Seneca</string>
+
+    <string name="note_title">Note Title</string>
+    <string name="note_subtitle">Note Subtitle</string>
+    <string name="type_note_here">Type note here...</string>
+    <string name="miscellaneous">Miscellaneous</string>
+    <string name="pick_color">Pick Color</string>
+    <string name="add_image">Add image</string>
+    <string name="add_url">Add URL</string>
+    <string name="enter_url">Enter URL</string>
+    <string name="add">ADD</string>
+    <string name="cancel_dialog">CANCEL</string>
+    <string name="delete_note">Delete note</string>
+    <string name="are_you_sure_you_want_to_delete_this_note">Are you sure you want to delete this note?</string>
+
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+    <string name="wrongpassword">Password Should Be At Least 6 Characters Long</string>
+    <string name="passwordisnotcorrect">Password Does Not Match!</string>
+    <string name="title_activity_create_meeting">createMeeting</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="delete_confirmation">Confirmation</string>
+    <string name="sureToDelete">Are you sure you want to delete the task</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="confirmation">Completed the task!..</string>
+    <string name="sureToMarkAsComplete">Are you sure you want to mark this task as completed.</string>
+    <string name="congrats_you_have_completed_the_task_successfully">Congrats!... You have completed the task successfully..</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="complete">Complete</string>
+    <string name="title_activity_settings_page">Leanback SettingsPage</string>
+    <string name="browse_title">Videos by Your Company</string>
+    <string name="related_movies">Related Videos</string>
+    <string name="grid_view">Grid View</string>
+    <string name="error_fragment">Error Fragment</string>
+    <string name="personal_settings">Personal Settings</string>
+    <string name="watch_trailer_1">Watch trailer</string>
+    <string name="watch_trailer_2">FREE</string>
+    <string name="rent_1">Rent By Day</string>
+    <string name="rent_2">From $1.99</string>
+    <string name="buy_1">Buy and Own</string>
+    <string name="buy_2">AT $9.99</string>
+    <string name="movie">Movie</string>
+
+    <!-- Error messages -->
+    <string name="error_fragment_message">An error occurred</string>
+    <string name="dismiss_error">Dismiss</string>
+</resources>

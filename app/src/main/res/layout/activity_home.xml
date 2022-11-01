@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="#0AC2FA">
+
+
+
+
+    <ImageView
+        android:id="@+id/backHome"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+
+        android:background="@drawable/ic_round_arrow_back_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.028"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/stepsTxt"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:text="Keep Track of your Fitness Journey"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toEndOf="@+id/backHome"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:src="@drawable/ic_walking_three"
+
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepsTxt" />
+
+    <TextView
+        android:id="@+id/callTxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="@dimen/_64sdp"
+        android:textColor="@color/black"
+
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/edittext1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:background="@drawable/navigation_corners"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+android:paddingTop="@dimen/_20sdp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/_69sdp"
+            android:layout_height="@dimen/_83sdp"
+            android:layout_gravity="center_horizontal"
+
+            android:background="@drawable/ic_steps"
+            android:backgroundTint="@color/mainBlue"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edittext1"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_33sdp"
+        android:layout_below="@id/callTxt2"
+        android:layout_centerInParent="true"
+        android:digits="1234567890"
+        android:hint="Steps"
+        android:drawableLeft="@drawable/ic_walk"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="5"
+        android:paddingLeft="@dimen/_10sdp"
+        android:textColorHint="#ADD8E6"
+        android:textSize="@dimen/_15sdp"
+        android:drawablePadding="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/edit_background"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="@dimen/_10sdp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="Please Input the number of steps you plan on taking today"
+        android:textAlignment="center"
+        android:textColor="#808080"
+        android:textSize="@dimen/_12sdp"
+        app:layout_constraintBottom_toTopOf="@+id/edittext1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/_20sdp"
+        />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_30sdp"
+
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="Get Started"
+        android:textSize="@dimen/_10sdp"
+        android:textAllCaps="false"
+        android:backgroundTint="#FFC53F"
+        android:background="@drawable/steps_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

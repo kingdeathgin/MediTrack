@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/medication"
+        android:title="Medications"
+        android:icon="@drawable/ic_medication"/>
+
+    <item
+        android:id="@+id/anchor"
+        android:title=""
+       />
+
+
+    <item
+        android:id="@+id/health"
+        android:title="Health"
+        android:icon="@drawable/ic_health"/>
+
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings"/>
+</menu>

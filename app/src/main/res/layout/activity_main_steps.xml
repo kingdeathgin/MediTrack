@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainSteps"
+    android:id="@+id/background"
+   >
+
+    <View
+        android:id="@+id/stepBackground"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_250sdp"
+        android:background="#0AC2FA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/stepBack"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/ic_round_arrow_back_24"
+        android:layout_marginTop="@dimen/_10sdp"
+app:layout_constraintHorizontal_bias=".03"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/svgBackground"
+        android:layout_width="@dimen/_362sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:background="@drawable/ic_wave"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stepBackground" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        app:cardBackgroundColor="@color/card_background"
+        app:cardCornerRadius="@dimen/_16sdp"
+        app:layout_constraintBottom_toBottomOf="@id/svgBackground"
+        app:layout_constraintTop_toBottomOf="@id/svgBackground"
+        app:cardElevation="10dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp">
+
+            <TextView
+                android:id="@+id/textViews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Progress"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_14sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:id="@+id/layoutClients"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/layoutImpacted"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViews">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+                    android:background="@drawable/ic_distance"
+                    android:backgroundTint="#FFC53F"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="Distance Traveled"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/_10sdp"/>
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:maxLength="6"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/_13sdp"/>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Miles"
+
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/_10sdp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutImpacted"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/layoutFollowing"
+                app:layout_constraintStart_toEndOf="@id/layoutClients"
+                app:layout_constraintTop_toBottomOf="@id/textViews">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_23sdp"
+                    android:layout_height="@dimen/_28sdp"
+
+                    android:background="@drawable/ic_calories"
+                    android:backgroundTint="#FF0B63"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="Calories Burned"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/_10sdp"/>
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:maxLength="6"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/_13sdp"/>
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kcal"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/_10sdp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutFollowing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/layoutImpacted"
+                app:layout_constraintTop_toBottomOf="@id/textViews">
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_28sdp"
+
+                    android:background="@drawable/ic_round_access_time_24"
+                    android:backgroundTint="#de8ff2"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="Time"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/_10sdp"/>
+
+                <TextView
+                    android:id="@+id/timerText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00:00"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/_13sdp"/>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/_126sdp"
+        android:layout_height="@dimen/_127sdp"
+        android:layout_marginTop="@dimen/_52sdp"
+        android:background="@drawable/ic_step"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/progress"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/progress"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewStepCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_round_directions_run_24"
+        android:drawableTint="#0AC2FA"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:text="Combined steps"
+        android:textColor="#0AC2FA"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardHeader" />
+
+    <ProgressBar
+
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="@dimen/_283sdp"
+        android:layout_height="@dimen/_282sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@drawable/circle_shape"
+        android:indeterminate="false"
+        android:progressDrawable="@drawable/circle_progress_bar"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ProgressBar>
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:maxLength="6"
+        android:text="%"
+        android:textColor="@color/white"
+android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="@+id/progress"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/progress"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStepDetector" />
+
+    <TextView
+        android:id="@+id/textViewStepDetector"
+        android:layout_width="@dimen/_180sdp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="0 Steps"
+        android:layout_marginTop="@dimen/_5sdp"
+
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+
+
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="@dimen/_68sdp"
+        android:layout_height="@dimen/_65sdp"
+
+        android:background="@drawable/ic_round_play_circle_24"
+        android:onClick="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStepCounter" />
+
+    <ImageView
+        android:id="@+id/stop"
+        android:layout_width="@dimen/_56sdp"
+        android:layout_height="@dimen/_56sdp"
+        android:background="@drawable/ic_pause"
+        android:backgroundTint="@color/red"
+        android:onClick="stop"
+android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStepCounter" />
+
+    <ImageView
+        android:id="@+id/reset"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/ic_reset"
+        android:onClick="reset"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.91"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStepCounter" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

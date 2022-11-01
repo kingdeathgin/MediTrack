@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.meditrack"
+    tools:ignore="MissingLeanbackLauncher">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ic_meditrack"
+        android:label="MediTrack"
+        android:roundIcon="@drawable/medicine1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MediTrack"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label"
+        tools:targetApi="31">
+        <activity
+            android:name="com.example.meditrack.SettingsPage"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.example.meditrack.joinMeeting"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.meditrack.createMeeting"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.meditrack.MainCall"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.meditrack.MainImageActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.meditrack.MemoryGames"
+            android:exported="true" />
+        <activity
+            android:name="com.example.meditrack.Navigation"
+            android:exported="true"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name="com.example.meditrack.EmergencyCall"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.meditrack.Signup"
+            android:exported="true"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.example.meditrack.Login"
+            android:exported="true"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.example.meditrack.Dashboard"
+            android:exported="true"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.example.meditrack.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.meditrack.activities.CreateNoteActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.example.meditrack.activities.MainNotes"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.example.meditrack.Home"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.meditrack.MainSteps"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.meditrack.MainTiles"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.meditrack.NearMe"
+            android:exported="true"></activity>
+        <activity
+            android:name="com.example.meditrack.LegsPage"
+            android:exported="false" />
+        <activity
+            android:name="com.example.meditrack.IntestinesPage"
+            android:exported="false" />
+        <activity
+            android:name="com.example.meditrack.AnRecPage"
+            android:exported="false" />
+        <activity
+            android:name="com.example.meditrack.StomachPage"
+            android:exported="false" />
+        <activity
+            android:name="com.example.meditrack.LiverPage"
+            android:exported="false" />
+        <activity
+            android:name="com.example.meditrack.LungsPage"
+            android:exported="false" />
+        <activity
+            android:name="com.example.meditrack.HeartPage"
+            android:exported="false" />
+        <activity
+            android:name="com.example.meditrack.ArmsPage"
+            android:exported="false" />
+        <activity
+            android:name="com.example.meditrack.HeadPage"
+            android:exported="false" />
+        <activity
+            android:name="com.example.meditrack.SkinPage"
+            android:exported="false" />
+        <activity
+            android:name="com.example.meditrack.DiseaseMainActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name="com.example.meditrack.head_popups.ConcussionPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.head_popups.ContusionPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.head_popups.ICHPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.head_popups.SkullfPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.arm_popups.TendinitisPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.arm_popups.BursitisPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.arm_popups.armSprainPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.arm_popups.osteoarthritisPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.skin_popups.HivesPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.skin_popups.AcnePopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.skin_popups.ContactDermPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.skin_popups.ShinglesPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.heart_popups.PulmonaryStenosisPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.heart_popups.DilatedCardiomyopathyPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.heart_popups.CADPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.heart_popups.CHDPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.heart_popups.HeartArrhythmiaPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.lungs_popups.AsthmaPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.lungs_popups.BronchitisPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.lungs_popups.PneumoniaPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.lungs_popups.PulmonaryEdemaPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.liver_popups.LiverCancerPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.liver_popups.FattyLiverDiseasePopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.liver_popups.HepatitisPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.stomach_popups.MalabsorptionPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.stomach_popups.CeliacDiseasePopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.stomach_popups.ChronsDiseasePopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.anrec_popups.AnalFissuresPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.anrec_popups.HemorrhoidsPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.anrec_popups.ColitisPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.intestines_popup.InguinalHerniaPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.intestines_popup.PerianalAbscessPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.legs_popups.PTTDPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.legs_popups.HSPPopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity
+            android:name="com.example.meditrack.legs_popups.BuergersDiseasePopup"
+            android:theme="@style/Theme.MediTrack" />
+        <activity android:name="com.example.meditrack.AlarmActivity" />
+        <activity
+            android:name="com.example.meditrack.ReminderMainActivity"
+            android:exported="true"></activity>
+
+        <receiver
+            android:name="com.example.meditrack.AlarmBroadcastReceiver"
+            android:enabled="false"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.example.meditrack.AlarmService"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="Instantiatable" />
+        <service
+            android:name="com.example.meditrack.PushNotificationService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="org.jitsi.meet.sdk.ConnectionService"
+            android:permission="android.permission.BIND_TELECOM_CONNECTION_SERVICE"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.telecom.ConnectionService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

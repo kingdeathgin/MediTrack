@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/armColor"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:outlineSpotShadowColor="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/armColor"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Osteoarthritis"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:paddingStart="10dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most common form of arthritis, cartilage that cushions bones wears down."
+                android:textSize="24dp"
+                android:paddingStart="10dp"
+                android:textStyle="italic"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Causes: Cartilage that cushions you joints gradually deteriorates"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Treatment: Medicines (Acetaminophen, NSAIDs), Therapy, Surgery."
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="https://www.mayoclinic.org/diseases-conditions/osteoarthritis/diagnosis-treatment/drc-20351930"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Severity Scale (1- Minor, 10- Severe)"
+                android:textSize="20dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rating_scale_8"
+                android:layout_marginTop="-125dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

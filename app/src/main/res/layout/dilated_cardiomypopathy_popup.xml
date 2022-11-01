@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/heart_pink"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:outlineSpotShadowColor="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/heart_pink"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dilated Cardiomyopathy"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:paddingStart="10dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Left ventricle becomes too enlarged to keep blood flowing."
+                android:textSize="24dp"
+                android:paddingStart="10dp"
+                android:textStyle="italic"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Causes: Coronary heart disease, infections, drugs"
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Treatment: Eliminate exposures to toxins, treat other heat diseases, correct nutrition."
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="https://www.hopkinsmedicine.org/health/conditions-and-diseases/dilated-cardiomyopathy"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Severity Scale (1- Minor, 10- Severe)"
+                android:textSize="20dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-125dp"
+                android:src="@drawable/rating_scale_10" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

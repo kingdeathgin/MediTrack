@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/tilesBackground"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainTiles"
+    android:background="@color/background"
+    android:weightSum="10"
+    android:paddingBottom="100dp"
+    android:fitsSystemWindows="true">
+
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:layout_marginHorizontal="30dp"
+        android:weightSum="10"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/backTiles"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+
+           android:backgroundTint="@color/black"
+            android:background="@drawable/ic_round_arrow_back_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.028"
+            />
+        <TextView
+            android:id="@+id/mLevel"
+            android:textColor="#078a88"
+            android:textSize="18dp"
+            android:gravity="start"
+            android:text="Tiles: 3"
+            android:layout_weight="4"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:textStyle="bold|italic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/mScore"
+            android:textColor="#078a88"
+            android:gravity="end"
+            android:textSize="18dp"
+            android:text="Score: 212"
+            android:textStyle="bold|italic"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mTime"
+        android:textColor="#b579a8"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:text="3"
+        android:textStyle="bold|italic"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_gravity="center"
+        android:layout_weight="8"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <GridView
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/myGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:columnWidth="100dp"
+            android:numColumns="6"
+            android:verticalSpacing="4dp"
+            android:horizontalSpacing="4dp"
+            android:stretchMode="columnWidth"
+            android:visibility="visible"/>
+        <GridView
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="30dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/myGridViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:columnWidth="100dp"
+            android:numColumns="6"
+            android:verticalSpacing="4dp"
+            android:horizontalSpacing="4dp"
+            android:stretchMode="columnWidth"
+            android:visibility="visible"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/congratsLayout"
+            android:layout_width="@dimen/_290sdp"
+            android:layout_height="@dimen/_220sdp"
+            android:background="@drawable/emergency_top_bottom"
+            android:padding="@dimen/_10sdp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/congratsTile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Congrats"
+                android:textAlignment="center"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/_26sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Would you like to continue?"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/_16sdp"
+                app:layout_constraintBottom_toTopOf="@+id/cancelCongrats"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/congratsTile" />
+
+            <Button
+                android:id="@+id/cont"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:onClick="hide"
+                android:text="Continue"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <Button
+                android:id="@+id/cancelCongrats"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#ff0000"
+                android:onClick="leave"
+                android:textAllCaps="false"
+                android:text="Leave"
+
+
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toStartOf="@+id/cont"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

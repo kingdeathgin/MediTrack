@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:alpha="0.5"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_270sdp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_layout"
+        android:backgroundTint="@color/background"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:id="@+id/completedImage"
+        android:layout_gravity="center_horizontal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/correct"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_marginRight="@dimen/_15sdp"
+            android:textAlignment="center"
+            android:text="@string/congrats_you_have_completed_the_task_successfully"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/closeButton"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:background="@drawable/btn_background"
+            android:backgroundTint="@color/mainYellow"
+            android:textColor="@color/white"
+            android:text="Done"
+
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchFragment"
+    android:backgroundTint="@color/background">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@drawable/emergency_top"
+        android:backgroundTint="@color/mainYellow"/>
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/_50sdp"
+    android:text="Medication Reminder"
+    android:textColor="@color/white"
+    android:textSize="@dimen/_30sdp"
+    android:layout_marginLeft="@dimen/_13sdp"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:textStyle="bold"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_50sdp"
+        android:text="Never Miss out on Medication"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_25sdp"
+
+        android:layout_marginLeft="@dimen/_19sdp"
+        android:layout_marginTop="@dimen/_110sdp"
+        android:textStyle="bold"
+        android:fontFamily="cursive"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:text="Set a Reminder"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:background="@drawable/rounded_layout"
+        android:backgroundTint="@color/mainBlue"
+        android:textColor="@color/white"
+        android:id="@+id/fab2"/>
+
+    <ImageView
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:src="@drawable/ic_reminder"
+        android:layout_gravity="center"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/emergency_bottom"
+        android:backgroundTint="@color/mainYellow"/>
+
+</FrameLayout>

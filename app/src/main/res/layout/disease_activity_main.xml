@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.meditrack.DiseaseMainActivity">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_67sdp"
+    android:elevation="@dimen/_20sdp"
+
+    android:backgroundTint="#E1D9D1"
+    android:background="@drawable/emergency_top"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:padding="@dimen/_5sdp"
+                android:text="Disease Diagram"
+                android:textColor="@color/black"
+
+                android:textSize="@dimen/_25sdp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/backDisease"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/ic_round_arrow_back_24"
+        android:elevation="@dimen/_31sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginBottom="@dimen/_65sdp"
+        android:layout_marginRight="@dimen/_45sdp"
+        android:layout_marginLeft="@dimen/_45sdp"
+        android:background="@drawable/human_body_background">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/headButton"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/dark_head"
+            android:text="Head"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:strokeColor="@color/black"
+            app:strokeWidth="@dimen/_2sdp"
+            />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/anrecButton"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:backgroundTint="@color/anrec"
+            android:text="Anal /Rectal"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:strokeColor="@color/black"
+            android:layout_marginBottom="@dimen/_15sdp"
+            app:strokeWidth="@dimen/_2sdp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/legsButton"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:backgroundTint="@color/armColor"
+            android:text="Legs"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:strokeColor="@color/black"
+            app:strokeWidth="@dimen/_2sdp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/heartButton"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:backgroundTint="@color/heart_pink"
+            android:text="Heart"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="@dimen/_2sdp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/armButton"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:backgroundTint="@color/armColor"
+            android:text="Arms"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_100sdp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="@dimen/_2sdp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/liverButton"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:backgroundTint="@color/liver_color"
+            android:text="Liver"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/_65sdp"
+            android:layout_marginLeft="@dimen/_30sdp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="@dimen/_2sdp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/skinButton"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:backgroundTint="@color/armColor"
+            android:text="Skin"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_110sdp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="@dimen/_2sdp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/stomachButton"
+            android:layout_width="@dimen/_85sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:backgroundTint="@color/stomach_color"
+            android:text="Stomach"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginLeft="@dimen/_95sdp"
+            android:layout_marginTop="@dimen/_90sdp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="@dimen/_2sdp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/intestineButton"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:backgroundTint="@color/intestines"
+            android:text="Intenstines"
+
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_100sdp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="@dimen/_2sdp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/lungButton"
+            android:layout_width="83dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/lung_red"
+            android:text="Lungs"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/heartButton"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="@dimen/_25sdp"
+
+            app:strokeColor="@color/black"
+            app:strokeWidth="@dimen/_2sdp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

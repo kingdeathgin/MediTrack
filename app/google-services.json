@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "351541472882",
+    "firebase_url": "https://meditrack-e1292-default-rtdb.firebaseio.com",
+    "project_id": "meditrack-e1292",
+    "storage_bucket": "meditrack-e1292.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351541472882:android:da6c2f7d2f779e61079ceb",
+        "android_client_info": {
+          "package_name": "com.example.meditrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351541472882-2150r7f1a07add1h74d8bni2434id3r0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe5MfkgkEYxUgp0j9IfIt_97f91cKW49w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "351541472882-2150r7f1a07add1h74d8bni2434id3r0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

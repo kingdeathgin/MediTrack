@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.meditrack.SkinPage"
+    android:background="@color/armColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Common Skin Diseases"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="Click on a button below to learn more about each topic!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/acneButton"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="#e6c407"
+            android:drawableRight="@drawable/ic_skin"
+            android:drawableTint="@color/white"
+            android:text="Acne"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:cornerRadius="@dimen/_13sdp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/shinglesButton"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#e6c407"
+            android:drawableRight="@drawable/ic_skin"
+            android:drawableTint="@color/white"
+            android:text="Shingles"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:cornerRadius="@dimen/_13sdp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/hivesButton"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="#e6c407"
+            android:drawableRight="@drawable/ic_skin"
+            android:drawableTint="@color/white"
+            android:text="Hives"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:cornerRadius="@dimen/_13sdp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/contactDermButton"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="#e6c407"
+            android:drawableRight="@drawable/ic_skin"
+            android:drawableTint="@color/white"
+            android:text="Contact Dermatitis"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:cornerRadius="@dimen/_13sdp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backButtonHead"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:backgroundTint="#c20044"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+
+            app:cornerRadius="@dimen/_10sdp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

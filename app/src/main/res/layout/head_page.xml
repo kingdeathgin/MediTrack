@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.meditrack.HeadPage"
+    android:background="#e0ac10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Common Head Injuries"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="Click on a button below to learn more about each topic!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/concussionButton"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="#ad8405"
+            android:text="Concussion"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:drawableTint="@color/white"
+            android:drawableRight="@drawable/ic_head"
+            app:cornerRadius="@dimen/_10sdp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/contusionButton"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="#ad8405"
+            android:text="Contusion"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:drawableTint="@color/white"
+            android:drawableRight="@drawable/ic_head"
+            app:cornerRadius="@dimen/_10sdp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/ichButton"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="#ad8405"
+            android:text="Intracranial Hematoma"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:drawableTint="@color/white"
+            android:drawableRight="@drawable/ic_head"
+            app:cornerRadius="@dimen/_10sdp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/skullfButton"
+            android:layout_width="@dimen/_280sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:backgroundTint="#ad8405"
+            android:text="Skull Fracture"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:drawableTint="@color/white"
+            android:drawableRight="@drawable/ic_head"
+            app:cornerRadius="@dimen/_10sdp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/backButtonHead"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:backgroundTint="#c20044"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:cornerRadius="@dimen/_10sdp" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

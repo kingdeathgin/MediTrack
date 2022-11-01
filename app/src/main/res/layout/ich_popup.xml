@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_head">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/dark_head"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Intracranial Hematoma (ICH)"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:paddingStart="10dp"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bleeding under the skull in the brain that forms a clot."
+                android:textSize="24dp"
+                android:paddingStart="10dp"
+                android:textStyle="italic"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Causes: Hard fall, car accident, or high impact sport injury."
+                android:paddingTop="10dp"
+                android:paddingStart="10dp"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Treatment: Varies by individual but may include monitoring and surgical drainage."
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:text="https://www.neurosurgery.columbia.edu/patient-care/conditions/intracranial-hematoma"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Severity Scale (1- Minor, 10- Severe)"
+                android:textSize="20dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/rating_scale_10"
+                android:layout_marginTop="-125dp"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
