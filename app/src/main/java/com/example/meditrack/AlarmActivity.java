@@ -48,8 +48,7 @@ public class AlarmActivity extends com.example.meditrack.BaseActivity {
             event.setText(getIntent().getStringExtra("EVENT"));
         }
 
-        Glide.with(getApplicationContext()).load(R.drawable.alert).into(imageView);
-        closeButton.setOnClickListener(view -> finish());
+        Glide.with(getApplicationContext()).lish());
 
     }
 
